@@ -6,6 +6,9 @@ The problem statement is to create a Streamlit application that allows users to 
 3. Option to store the data in a MYSQL or PostgreSQL.
 4. Ability to search and retrieve data from the SQL database using different search options, including joining tables to get channel details.
 
+![image](https://github.com/user-attachments/assets/d4f75c3f-3692-41bc-a24c-8d7b30fad2fd)
+
+
 # Developer Guide
 1. Tools Install
 Virtual code.
@@ -18,19 +21,15 @@ pip install google-api-python-client, mysql-connector-python, sqlalchemy, pymysq
 ( pip install google-api-python-client  mysql-connector-python sqlalchemy pymysql pandas numpy plotly-express streamlit )
 
 3. Import Libraries
-Youtube API libraries
-
+# Youtube API libraries
 import googleapiclient.discovery
 from googleapiclient.discovery import build
-File handling libraries
 
+# File handling libraries
 import json
 import re
 
-
-import pymongo
-SQL libraries
-
+# SQL libraries
 import mysql.connector
 import sqlalchemy
 from sqlalchemy import create_engine
@@ -39,10 +38,10 @@ pandas, numpy
 
 import pandas as pd
 import numpy as np
-Dashboard libraries
 
+# Dashboard libraries
 import streamlit as st
-import plotly.express as px
+
 
 4. E T L Process
 a) Extract data
