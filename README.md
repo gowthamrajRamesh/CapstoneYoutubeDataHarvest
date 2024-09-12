@@ -57,8 +57,10 @@ b) Filter the data
 Filter and process the collected data from the tables depending on the given requirements by using SQL queries and transform the processed data into a DataFrame format.
 c) Visualization
 Finally, create a Dashboard by using Streamlit and give dropdown options on the Dashboard to the user and select a question from that menu to analyse the data and show the output in Dataframe Table and Bar chart.
-User Guide
+
+# User Guide
 Step 1. Data collection zone
 Search channel_id, copy and paste on the input box and click the Get data and stored button in the Data collection zone.
+
 Step 2. Channel Data Analysis zone
 Select a Question from the dropdown option you can get the results in Dataframe format or bar chat format.
