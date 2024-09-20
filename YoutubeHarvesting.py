@@ -98,8 +98,8 @@ if onclick or st.session_state.channels_button:
                                 video_id varchar(200),
                                 channel_id varchar(200),
                                 video_name varchar(500),
-                                duration varchar(100),
                                 video_published_At varchar(200),
+                                duration varchar(100),
                                 viewcount int,
                                 likecount int,
                                 favoriteCount int,
@@ -283,10 +283,10 @@ if start_analysis:
     
     #Q8
     elif questions=='8.What are the names of all the channels that have published videos in the year 2022?':
-        #df= pd.read_sql('''select channel_name,view_count from channels'''
-        
-        #                    ,engine,columns=['Channels','No of Views'])
-        st.write('Not completed')
+        df= pd.read_sql("select distinct c.channel_name from videos_details vd join channels c on c.channel_id=vd.channel_id where extract(YEAR from vd.video_published_At)=2022"
+                            ,engine)
+        st.dataframe(df,column_config={'channel_name': 'Channels'
+                                            })
 
     #Q9
     elif questions=='9.What is the average duration of all videos in each channel, and what are their corresponding channel names?':
